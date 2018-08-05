@@ -11,7 +11,6 @@
 module Model where
 
 import ClassyPrelude.Yesod
-import Database.Persist.Quasi
 import Database.Persist.MongoDB hiding (master)
 import Language.Haskell.TH.Syntax
 
