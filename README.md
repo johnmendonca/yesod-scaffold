@@ -1,5 +1,7 @@
 yesod-scaffold
 ==============
+This is my fork of the yesod project templates, changes here compared to the official version:
+* Persistent models are declared in `src/Model.hs` rather than an external file
 
 Included in this fork:
 * master
