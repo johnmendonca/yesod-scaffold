@@ -84,7 +84,7 @@ build noRunTests = do
         run_ "git" ["diff", "--exit-code"]
         run_ "stack" ["init"]
         run_ "stack" testArgs
-        run_ "packdeps" ["PROJECTNAME.cabal"]
+        --run_ "packdeps" ["PROJECTNAME.cabal"]
         run_ "git" ["clean", "-fxd"]
         createHsFiles "yesod-scaffold" ("hsfiles" </> T.unpack ("yesod-" <> branch) <.> "hsfiles") branch
 
