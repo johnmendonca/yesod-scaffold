@@ -11,7 +11,6 @@
 module Model where
 
 import ClassyPrelude.Yesod
-import Database.Persist.Quasi
 
 -- Syntax for Persistent entities:
 --   https://github.com/yesodweb/persistent/blob/master/docs/Persistent-entity-syntax.md
