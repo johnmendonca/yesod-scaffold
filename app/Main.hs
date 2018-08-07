@@ -109,7 +109,7 @@ pull = do
   proc "git" ["checkout", "master"] runProcess_
 
 branches :: [Text]
-branches = [ "postgres", "sqlite",  "mongo", "simple" -- , "mysql", "postgres-fay"
+branches = [ "postgres", "sqlite", "mysql", "mongo", "simple" -- , "postgres-fay"
            , "minimal"
            ]
 

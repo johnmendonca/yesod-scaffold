@@ -6,14 +6,11 @@ This is my fork of the yesod project templates, changes here compared to the off
 Included in this fork:
 * master
 * postgres
+* mysql
 * sqlite
 * simple
 * mongo
 * minimal
-
-Disabled:
-* mysql
-* postgres-fay
 
 The Yesod scaffolding, with branches for different versions.
 
