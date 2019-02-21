@@ -18,11 +18,7 @@ import ClassyPrelude.Yesod
 -- You can find more information on persistent and how to declare entities at:
 --   http://www.yesodweb.com/book/persistent/
 --
--- You can define all of your database entities in an external file.
--- share [mkPersist sqlSettings, mkMigrate "migrateAll"]
---     $(persistFileWith lowerCaseSettings "config/models")
---
--- We will declare database entities here so that any tools that watch
+-- We can declare database entities here in a Haskell file so build tools that watch
 -- for file changes will recompile this file when the schema changes.
 
 share [mkPersist sqlSettings, mkMigrate "migrateAll"] [persistLowerCase|
@@ -42,3 +38,11 @@ Comment json -- Adding "json" causes ToJSON and FromJSON instances to be derived
     deriving Eq
     deriving Show
 |]
+
+-- You can define all of your database entities in the entities file.
+-- You can find more information on persistent and how to declare entities
+-- at:
+-- http://www.yesodweb.com/book/persistent/
+-- share [mkPersist sqlSettings, mkMigrate "migrateAll"]
+--     $(persistFileWith lowerCaseSettings "config/models.persistentmodels")
+
