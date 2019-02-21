@@ -1,7 +1,8 @@
 yesod-scaffold
 ==============
 This is my fork of the yesod project templates, changes here compared to the official version:
-* Persistent models are declared in `src/Model.hs` rather than an external file
+* Persistent models are declared in `src/Model.hs` instead of an external file
+* Routes are declared in `src/Foundation.hs` instead of an external file
 
 Included in this fork:
 * master
@@ -9,7 +10,6 @@ Included in this fork:
 * mysql
 * sqlite
 * simple
-* mongo
 * minimal
 
 The Yesod scaffolding, with branches for different versions.
